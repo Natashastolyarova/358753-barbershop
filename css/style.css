@@ -7,7 +7,7 @@ body {
 	background-size: cover;
 }
 .container {
-	width: 960px;
+	max-width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -18,10 +18,10 @@ body {
 }
 /*/////////////   		(End)   		 //////////////////*/
 
-/*//////////// 		  Header nav -->			   /////////////*/
+/*//////////// 		 Header nav -->			   /////////////*/
 .main-header {
 	min-height: 70px;
-	/*border: 1px solid #fff;*/
+	background-color: #000;
 }
 .main-header a {
 	color: #fff;
@@ -34,7 +34,7 @@ body {
 }
 .main-navigation {
 	float: left; 
-	width: 780px;
+	max-width: 780px;
 }
 .main-navigation ul {
 	list-style: none;
@@ -49,12 +49,13 @@ body {
 }
 .user-block a {
 	float: right;
+	position: relative;
 }
 .user-block a::before {
 	content: url(../img/login-icon.png);
-	display: inline-block;
-	padding-right: 5px;
-	vertical-align: middle;
+	position: absolute;
+	left: -3px;
+	top: 26px;
 }
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
