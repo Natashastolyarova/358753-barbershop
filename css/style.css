@@ -1,0 +1,61 @@
+ html, body, ul, a {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #000 url(../img/tint-bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.container {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+/*/////////////   		(End)   		 //////////////////*/
+
+/*//////////// 		  Header nav -->			   /////////////*/
+.main-header {
+	min-height: 70px;
+	/*border: 1px solid #fff;*/
+}
+.main-header a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 20px;
+	display: block;
+	padding: 25px 20px;
+	font-size: 16px;
+}
+.main-navigation {
+	float: left; 
+	width: 780px;
+}
+.main-navigation ul {
+	list-style: none;
+	float: left;
+}
+.main-navigation ul li {
+	float: left;
+}
+.user-block {
+	float: right;
+	width: 140px;
+}
+.user-block a {
+	float: right;
+}
+.user-block a::before {
+	content: url(../img/login-icon.png);
+	display: inline-block;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+/*//////////// 		  <-- Header nav	(End)		   /////////////*/
+
+
