@@ -78,12 +78,13 @@ body {
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+	position: relative;
+
 }
 .features-item:last-child {
 	margin-right: 0;
 }
 .features-name {
-	position: relative;
 	font-size: 30px;
 	line-height: 42px;
 	text-transform: uppercase;
@@ -94,7 +95,7 @@ body {
 	height: 20px;
 	display: block;
 	position: absolute;
-	top: 17px;
+	top: 30%;
 	left: 140px;
 	transform: rotate(-45deg);
 	background-color: #fff;
