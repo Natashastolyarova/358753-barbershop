@@ -172,11 +172,11 @@ body {
 	width: 300px;
 }
 .index-content-title {
+	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 42px;
 	text-transform: uppercase;
-	margin-bottom: 20px;
-}
+	}
 
 .main-footer {
 	background: #fff url(../img/footer-bg.png) 0 0 no-repeat;
