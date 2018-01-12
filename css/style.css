@@ -125,24 +125,30 @@ body {
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
 /*////////          main .features -->      ///////////*/
+/*/////////           LOGO -->                    ///////////*/
 .main-container {
 	padding-top: 160px;
 }
-.index-logo img{
-	display: block;
-	width: auto;
+.index-logo {
+	width: 368px;
+	min-height: 204px;
 	margin: 0 auto;
 }
+ /*/////      <--LOGO End                //////////////////////*/
 .features {
-	height: auto;
-	padding-top: 30px;
-	padding-bottom: 60px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	padding-bottom: 60px; 
 	text-align: center;
 }
 .features-item {
 	position: relative;
 	width: 300px;
-	display: inline-block;
 	vertical-align: top;
 	padding: 0 5px;
 	margin: 0 5px;
@@ -171,18 +177,22 @@ body {
 /*//////////          <--features   and    /////////*/
 
 .index-content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 	background: #f8f5f2 url(../img/bg-phone.jpg) center no-repeat;
 	height: 420px;
 	padding: 50px 80px;
-	color: #000;
 	margin-bottom: 35px;
+	color: #000;
 }
 .index-content-left {
-	float: left;
 	width: 380px;
 }
 .index-content-right {
-	float: right;
 	width: 300px;
 }
 .index-content-title {
@@ -191,7 +201,7 @@ body {
 	line-height: 42px;
 	text-transform: uppercase;
 	}
-
+/*//////////            FOOTER --->             //////////////////         */
 .main-footer {
 	background: #fff url(../img/footer-bg.png) 0 0 no-repeat;
 	height: 190px;
@@ -199,17 +209,22 @@ body {
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
+.main-footer-layout {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
 .footer-contacts {
-	float: left;
 	width: 320px;
 	margin-right: 60px;
 }
 .footer-social {
-	float: left;
 	width: 260px;
 }
 .footer-copiright {
-	float: right;
 	width: 160px;
 	text-align: right;
+	margin-left: auto;
 }
