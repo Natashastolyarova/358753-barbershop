@@ -79,7 +79,15 @@ body {
 	background-color: #000;
 	/*display: none;*/
 }
-.main-header a {
+.main-header-layout {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.main-header-layout a {
 	display: block;
 	padding: 25px 20px;
 	text-transform: uppercase;
@@ -88,24 +96,30 @@ body {
 	color: #fff;
 }
 .main-navigation {
-	float: left; 
-	min-width: 780px;
-}
-.main-navigation li {
-	float: left;
+	max-width: 780px;
 }
 .user-block {
+	min-width: 140px;
 	position: relative;
-	float: right;
-	width: 140px;
+}
+.main-navigation ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
 }
 .user-block a {
-	float: right;
+	text-align: center;
 }
 .user-block a::before {
 	position: absolute;
 	top: 26px;
-	left: 60px;
+	left: 30px;
 	content: url(../img/login-icon.png);
 }
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
