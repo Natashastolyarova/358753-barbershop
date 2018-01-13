@@ -22,10 +22,11 @@ html {
 	margin: 0 auto;
 }
 body {
-	background: #000 url(../img/tint-bg.jpg) no-repeat top;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: 700;
 	color: #fff;
+	text-transform: uppercase;
+	background: #000 url(../img/tint-bg.jpg) no-repeat top;
 }
 /*/////////////   		(End)   		 //////////////////*/
 
@@ -36,39 +37,47 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 99;
-	min-height: 70px;
 	background-color: #000;
 	/*display: none;*/
-}
-.main-header a {
-	display: block;
-	padding: 25px 20px;
-	text-transform: uppercase;
-	line-height: 20px;
-	font-size: 16px;
-	color: #fff;
 }
 .main-navigation {
 	float: left; 
 	min-width: 780px;
 }
+.main-navigation ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
 .main-navigation li {
 	float: left;
+	font-size: 16px;
+	line-height: 20px;
+}
+.main-navigation a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 25px 20px;
+}
+.main-navigation a:hover {
+	background-color: #252525;
 }
 .user-block {
-	position: relative;
+	/*position: relative;*/
 	float: right;
 	width: 140px;
 }
 .user-block a {
 	float: right;
 }
-.user-block a::before {
+/*.user-block a::before {
 	position: absolute;
 	top: 26px;
 	left: 60px;
 	content: url(../img/login.png);
-}
+}*/
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
 /*////////          main .features -->      ///////////*/
