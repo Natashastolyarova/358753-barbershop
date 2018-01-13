@@ -68,12 +68,14 @@ body {
 .user-block {
 	/*position: relative;*/
 	float: right;
-	min-width: 140px;
+	max-width: 140px;
 	border: 1px solid #fff;
 }
-.user-block a {
+.login {
 	display: block;
+	padding: 25px 20px;
 	text-decoration: none;
+	color: #fff;
 }
 /*.user-block a::before {
 	position: absolute;
