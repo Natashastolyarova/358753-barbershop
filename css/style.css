@@ -66,23 +66,35 @@ body {
 	background-color: #252525;
 }
 .user-block {
-	/*position: relative;*/
+	position: relative;
 	float: right;
 	max-width: 140px;
-	border: 1px solid #fff;
 }
 .login {
 	display: block;
 	padding: 25px 20px;
+	padding-left: 50px;
 	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
 	color: #fff;
 }
-/*.user-block a::before {
+.login:hover {
+	background-color: #252525;
+}
+.login::before {
+	content: "";
 	position: absolute;
 	top: 26px;
-	left: 60px;
-	content: url(../img/login.png);
-}*/
+	left: 25px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/login.png) 0 0 no-repeat;
+	opacity: 0.3;
+}
+.login:hover::before {
+	opacity: 1;
+}
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
 /*////////          main .features -->      ///////////*/
