@@ -1,39 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-ol, ul {
-	list-style-type: none;
-}
-a {
-	text-decoration: none;
-}
-button {
-	border: none;
-	border-radius: 0;
-	margin: 0;
-	font: inherit;
-	outline: none;
-}
-/*body {
-	line-height: 0;
-}*/
 *, *::before, *::after {
 	box-sizing: inherit;
 }
@@ -52,19 +16,18 @@ html {
 	display: table;
 	clear: both;
 }
-/*/////////     <--- Сброс стилей (End)       /////////////////////////////////*/
-
-body {
-	background: #000 url(../img/tint-bg.jpg) center no-repeat;
-	background-size: cover;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
-	color: #fff;
-}
 .container {
 	max-width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
+}
+body {
+	background-size: cover;
+	font-weight: 700;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	background: #000 url(../img/body-bg.jpg) no-repeat center top;
 }
 /*/////////////   		(End)   		 //////////////////*/
 
@@ -75,9 +38,9 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 99;
-	min-height: 70px;
-	background-color: #000;
 	/*display: none;*/
+	color: #fff;
+	background-color: #000;
 }
 .main-header-layout {
 	display: -webkit-flex;
@@ -87,20 +50,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-.main-header-layout a {
-	display: block;
-	padding: 25px 20px;
-	text-transform: uppercase;
-	line-height: 20px;
-	font-size: 16px;
-	color: #fff;
-}
 .main-navigation {
 	max-width: 780px;
 }
-.user-block {
-	min-width: 140px;
-	position: relative;
+.main-navigation a {
+	display: block;
+	padding: 25px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.main-navigation a:hover {
+	background-color: #242424;
 }
 .main-navigation ul {
 	display: -webkit-flex;
@@ -112,15 +72,43 @@ body {
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
 }
-.user-block a {
-	text-align: center;
+.main-navigation li {
+	line-height: 20px;
+	font-size: 16px;
 }
-.user-block a::before {
+.user-block {
+	max-width: 140px;
+}
+.login {
+	position: relative;
+	display: block;
+	padding: 25px 20px;
+	padding-left: 50px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.login:hover {
+	background-color: #242424;
+}
+.login::before {
+	content: "";
 	position: absolute;
 	top: 26px;
-	left: 30px;
-	content: url(../img/login-icon.png);
+	left: 25px;
+	width: 18px;
+	height: 18px;
+	background: url("../img/login.png") no-repeat;
+	opacity: 0.3;
+}
+.login:hover::before {
+	opacity: 1;
 }
 /*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
@@ -156,7 +144,6 @@ body {
 .features-name {
 	font-size: 30px;
 	line-height: 42px;
-	text-transform: uppercase;
 }
 .features-name::after {
 	position: absolute;
@@ -199,7 +186,6 @@ body {
 	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 42px;
-	text-transform: uppercase;
 	}
 /*//////////            FOOTER --->             //////////////////         */
 .main-footer {
