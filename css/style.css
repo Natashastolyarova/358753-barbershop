@@ -42,7 +42,7 @@ body {
 }
 .main-navigation {
 	float: left; 
-	min-width: 780px;
+	max-width: 780px;
 }
 .main-navigation ul {
 	padding: 0;
@@ -51,15 +51,16 @@ body {
 	font-size: 0;
 }
 .main-navigation li {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	font-size: 16px;
 	line-height: 20px;
 }
 .main-navigation a {
+	display: block;
+	padding: 25px 20px;
 	text-decoration: none;
 	color: #fff;
-	display: inline-block;
-	padding: 25px 20px;
 }
 .main-navigation a:hover {
 	background-color: #252525;
@@ -67,10 +68,12 @@ body {
 .user-block {
 	/*position: relative;*/
 	float: right;
-	width: 140px;
+	min-width: 140px;
+	border: 1px solid #fff;
 }
 .user-block a {
-	float: right;
+	display: block;
+	text-decoration: none;
 }
 /*.user-block a::before {
 	position: absolute;
