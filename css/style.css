@@ -99,47 +99,58 @@ body {
 
 /*////////          main .features -->      ///////////*/
 .main-container {
-	padding-top: 160px;
+	margin-top: 160px;
 }
-.index-logo img{
+.index-logo {
 	display: block;
-	width: auto;
+	width: 368px;
+	height: 204px;
 	margin: 0 auto;
+	margin-bottom: 25px;
 }
+.index-logo img {
+	width: 368px;
+	height: 204px;
+}
+
 .features {
-	height: auto;
-	padding-top: 30px;
-	padding-bottom: 60px;
-	text-align: center;
+	margin-bottom: 80px;
 }
 .features-item {
-	position: relative;
+	float: left;
 	width: 300px;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 5px;
-	margin: 0 5px;
+	margin-right: 20px;
+	text-align: center;
+}
+.features-item:last-child {
+	margin-right: 0;
 }
 .features-name {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
 	font-size: 30px;
 	line-height: 42px;
 	text-transform: uppercase;
 }
 .features-name::after {
-	position: absolute;
-	top: 30%;
-	left: 140px;
-	transform: rotate(-45deg);
 	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
 	width: 20px;
 	height: 20px;
-	display: block;
+	margin-left: -10px;
 	background-color: #fff;
+	transform: rotate(-45deg);
 }
 .features-item p {
-	line-height: 24px;
+	margin: 10px;
+	margin-bottom: 0;
 	font-size: 14px;
-	padding: 67px 5px 10px ;
+	line-height: 24px;
 }
 /*//////////          <--features   and    /////////*/
 
