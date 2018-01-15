@@ -206,6 +206,7 @@ body {
 	padding: 10px 34px;
 	vertical-align: top;
 	text-align: center;
+	border-radius: 0;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -314,22 +315,59 @@ body {
 	margin-bottom: 15px;
 }
 .social-btn {
+	position: relative;
 	display: inline-block;
-	vertical-align: top;
 	width: 43px;
 	height: 43px;
 	margin: 0 2px;
 	font-size: 0;
+	vertical-align: top;
 	text-decoration: none;
-	background: #000 url("#") 0 0 no-repeat center;
-	border: 1px solid #fff;
-
+	background-color: #000;
+	
 	transition: background-position 0.5s,
 	background-color 0.5s;
 }
-.social-btn:hover {
-	background-color: #2f2;
+
+.social-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../img/sprite/sprite.png");
+	background-repeat: no-repeat;
 }
+.social-btn:hover {
+	background-color: #fff;
+}
+
+.social-btn-vk::before {
+	width: 25px;
+  height: 16px;
+  background-position: -5px -153px;
+}
+.social-btn-vk:hover::before {
+	background-position: -5px -179px;
+}
+.social-btn-fb::before {
+	width: 12px;
+  height: 22px;
+  background-position: -5px -89px;
+}
+.social-btn-fb:hover::before {
+	background-position: -5px -121px;
+}
+.social-btn-inst::before {
+	width: 21px;
+	height: 21px;
+	background-position: -5px -27px;
+}
+.social-btn-inst:hover::before {
+	background-position: -5px -58px;
+}
+
+
 .footer-copiright {
 	float: right;
 	max-width: 160px;
@@ -342,13 +380,12 @@ body {
 }
 .footer-copiright .btn {
 	margin-right: 0;
+	transition: background-position 0.5s,
+	background-color 0.5s,
 }
-
-
-
-
-
-
-
+.footer-copiright .btn:hover {
+	background-color: #fff;
+	color: #000;
+}
 
 
