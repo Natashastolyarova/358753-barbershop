@@ -129,22 +129,21 @@ body {
 .features {
 	display: flex;
 	justify-content: space-between;
-	/*padding-top: 25px;
-	padding-bottom: 60px; */
-	text-align: center;
+	margin-bottom: 60px;
 }
 .features-item {
-	position: relative;
 	width: 300px;
-	vertical-align: top;
-	padding: 0 5px;
+	/*padding: 0 5px;
 	margin: 0 5px;
+	vertical-align: top;*/
+	text-align: center;
 }
 .features-name {
+	position: relative;
 	font-size: 30px;
 	line-height: 42px;
 }
-.features-name::after {
+/*.features-name::after {
 	position: absolute;
 	top: 30%;
 	left: 140px;
@@ -154,7 +153,7 @@ body {
 	height: 20px;
 	display: block;
 	background-color: #fff;
-}
+}*/
 .features-item p {
 	line-height: 24px;
 	font-size: 14px;
