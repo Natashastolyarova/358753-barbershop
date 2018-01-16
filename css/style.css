@@ -354,6 +354,8 @@ body {
 
 .footer-social {
 	width: 260px;
+	margin-right: auto;
+	text-align: center;
 }
 .footer-social a {
 	font-size: 0;
