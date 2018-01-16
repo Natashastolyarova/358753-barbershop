@@ -358,24 +358,30 @@ body {
 	text-align: center;
 }
 .footer-social p {
+	margin: 0;
 	margin-bottom: 15px;
 }
 .social-btn {
-	font-size: 0;
-}
-.social-btn::before {
-	content: "";
+	position: relative;
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-		transform: background-position 0.5s,
-		color 0.5s;
-
-}
-.social-btn::before {
+	font-size: 0;
 	background: #000 url("../img/sprite/spritesheet.png");
 }
-.social-btn:hover::before {
+.social-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	
+
+}
+/*.social-btn::before {
+	background: #000 url("../img/sprite/spritesheet.png");
+}*/
+.social-btn:hover {
 	background-color: #fff;
 }
 .social-btn-vk::before {
