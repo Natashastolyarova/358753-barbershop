@@ -369,7 +369,8 @@ body {
 	font-size: 0;
 	background-color: #000;
 	transition: background-position 0.5s,
-	background-color: 0.5s;
+	background-color 0.5s;
+
 }
 .social-btn:hover {
 	background-color: #fff;
@@ -382,7 +383,6 @@ body {
 	transform: translate(-50%, -50%);
 	background-image: url("../img/sprite/spritesheet.png");
 	background-repeat: no-repeat;	
-
 }
 .social-btn-vk::before {
 	width: 25px;
@@ -410,7 +410,12 @@ body {
 }
 
 .footer-copiright {
-	width: 160px;
-	text-align: right;
+	max-width: 160px;
 	margin-left: auto;
+
+}
+.footer-copiright p {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 15px;
 }
