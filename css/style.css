@@ -129,7 +129,7 @@ body {
 .features {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 .features-item {
 	width: 300px;
@@ -146,20 +146,22 @@ body {
 	font-size: 30px;
 	line-height: 42px;
 }
-.features-name::after {
+/*.features-name::after {
+	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: rotate(-45deg);
-	content: "";
+	display: block;
 	width: 20px;
 	height: 20px;
-	display: block;
+	margin-left: -10px;
+	transform: rotate(-45deg);
 	background-color: #fff;
-}
+}*/
 .features-item p {
-	line-height: 24px;
 	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
 /*	padding: 67px 5px 10px ;
 */}
 /*//////////          <--features   and    /////////*/
