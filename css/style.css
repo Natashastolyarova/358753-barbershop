@@ -184,8 +184,11 @@ body {
 	margin-bottom: 25px;
 	font-size: 30px;
 	line-height: 42px;
+	text-transform: uppercase;
 	}
-
+.index-content p {
+	margin: 0;
+}
 /*     /////      .footer -->       //////        */
 .main-footer {
 	background: #fff url(../img/footer-bg.png) 0 0 no-repeat;
