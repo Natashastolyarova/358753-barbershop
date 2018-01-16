@@ -22,12 +22,12 @@ html {
 	margin: 0 auto;
 }
 body {
-	background-size: cover;
-	font-weight: 700;
 	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
 	background: #000 url(../img/body-bg.jpg) no-repeat center top;
+	background-size: cover;
 }
 
 /*//////////// 		 Header nav -->			   /////////////*/
@@ -163,6 +163,25 @@ body {
 	line-height: 24px;
 }
 
+/*     /////     .btn     /////     */
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 0;
+	background-color: #000;
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn:hover {
+	background-color: #663d15;
+}
+
 /*     /////      .index-content -->    /////      */
 .index-content {
 	display: flex;
@@ -209,6 +228,20 @@ body {
 .news-previw li {
 	margin-bottom: 30px;
 }
+.gallery {
+	position: relative;
+}
+.gallery .btn {
+	position: absolute;
+	bottom: 0;
+}
+.gallery-prew {
+	left: 0;
+}
+.gallery-next {
+	right: 0;
+}
+
 .gallery-content {
 	margin: 0;
 	width: 286px;
