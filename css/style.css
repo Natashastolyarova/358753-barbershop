@@ -231,7 +231,16 @@ body {
 }
 .gallery {
 	position: relative;
-	height: 260px;
+	height: 271px;
+	width: inherit;
+}
+.gallery-content {
+	margin: 0;
+	width: 286px;
+	height: 164px;
+}
+.gallery-content img {
+	border: 7px solid #fff;
 }
 .gallery .btn {
 	position: absolute;
@@ -245,14 +254,6 @@ body {
 	right: 0;
 }
 
-.gallery-content {
-	margin: 0;
-	width: 286px;
-	height: 164px;
-}
-.gallery-content img {
-	border: 7px solid #fff;
-}
 
 /*     /////      .footer -->       //////        */
 .main-footer {
