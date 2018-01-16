@@ -29,7 +29,6 @@ body {
 	text-transform: uppercase;
 	background: #000 url(../img/body-bg.jpg) no-repeat center top;
 }
-/*/////////////   		(End)   		 //////////////////*/
 
 /*//////////// 		 Header nav -->			   /////////////*/
 .main-header {
@@ -110,19 +109,22 @@ body {
 .login:hover::before {
 	opacity: 1;
 }
-/*//////////// 		  <-- Header nav	(End)		   /////////////*/
 
-/*////////          main .features -->      ///////////*/
-/*/////////           LOGO -->                    ///////////*/
+/*////////          .main -->      ///////////*/
+/*/////////           .logo -->                    ///////////*/
 .main-container {
-	padding-top: 160px;
+	margin-top: 160px;
 }
 .index-logo {
 	width: 368px;
 	min-height: 204px;
 	margin: 0 auto;
 }
- /*/////      <--LOGO End                //////////////////////*/
+.index-logo img {
+	width: 368px;
+	height: 204px;
+}
+/*     /////     .features     /////     */
 .features {
 	display: -webkit-flex;
 	display: -moz-flex;
