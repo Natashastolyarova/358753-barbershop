@@ -357,10 +357,13 @@ body {
 	margin-right: auto;
 	text-align: center;
 }
-.footer-social a {
+.footer-social p {
+	margin-bottom: 15px;
+}
+.social-btn {
 	font-size: 0;
 }
-.footer-social a::before {
+.social-btn::before {
 	content: "";
 	display: inline-block;
 	width: 43px;
