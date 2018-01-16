@@ -117,8 +117,9 @@ body {
 }
 .index-logo {
 	width: 368px;
-	min-height: 204px;
+	height: 204px;
 	margin: 0 auto;
+	margin-bottom: 25px;
 }
 .index-logo img {
 	width: 368px;
@@ -126,14 +127,10 @@ body {
 }
 /*     /////     .features     /////     */
 .features {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 25px;
-	padding-bottom: 60px; 
+	/*padding-top: 25px;
+	padding-bottom: 60px; */
 	text-align: center;
 }
 .features-item {
