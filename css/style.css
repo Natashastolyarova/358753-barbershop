@@ -125,7 +125,7 @@ body {
 	width: 368px;
 	height: 204px;
 }
-/*     /////     .features     /////     */
+/*     /////     .features -->     /////     */
 .features {
 	display: flex;
 	justify-content: space-between;
@@ -133,9 +133,6 @@ body {
 }
 .features-item {
 	width: 300px;
-	/*padding: 0 5px;
-	margin: 0 5px;
-	vertical-align: top;*/
 	text-align: center;
 }
 .features-name {
@@ -146,7 +143,7 @@ body {
 	font-size: 30px;
 	line-height: 42px;
 }
-/*.features-name::after {
+.features-name::after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -157,26 +154,24 @@ body {
 	margin-left: -10px;
 	transform: rotate(-45deg);
 	background-color: #fff;
-}*/
+}
 .features-item p {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 24px;
-	margin: 0;
-/*	padding: 67px 5px 10px ;
-*/}
-/*//////////          <--features   and    /////////*/
+}
 
+/*     /////      .index-content -->    /////      */
 .index-content {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	background: #f8f5f2 url(../img/bg-phone.jpg) center no-repeat;
 	height: 420px;
 	padding: 50px 80px;
 	margin-bottom: 35px;
+	background: url("../img/shadw.png") no-repeat center,
+	#f8f5f2 url(../img/bg-phone.jpg);
 	color: #000;
 }
 .index-content-left {
@@ -190,7 +185,8 @@ body {
 	font-size: 30px;
 	line-height: 42px;
 	}
-/*//////////            FOOTER --->             //////////////////         */
+
+/*     /////      .footer -->       //////        */
 .main-footer {
 	background: #fff url(../img/footer-bg.png) 0 0 no-repeat;
 	height: 190px;
