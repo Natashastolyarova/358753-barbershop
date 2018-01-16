@@ -167,12 +167,11 @@ body {
 .index-content {
 	display: flex;
 	justify-content: space-between;
-	height: 420px;
 	padding: 50px 80px;
 	margin-bottom: 35px;
+	color: #000;
 	background: url("../img/shadw.png") no-repeat center,
 	#f8f5f2 url(../img/bg-phone.jpg);
-	color: #000;
 }
 .index-content-left {
 	width: 380px;
