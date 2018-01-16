@@ -344,8 +344,15 @@ body {
 	width: 320px;
 	margin-right: 60px;
 }
+.footer-contacts p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+}
 .footer-contacts a {
 	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
 }
 .footer-contacts a:hover {
 	text-decoration: none;
@@ -360,6 +367,8 @@ body {
 .footer-social p {
 	margin: 0;
 	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 24px;
 }
 .social-btn {
 	position: relative;
@@ -367,10 +376,10 @@ body {
 	width: 43px;
 	height: 43px;
 	font-size: 0;
+	vertical-align: top;
 	background-color: #000;
 	transition: background-position 0.5s,
 	background-color 0.5s;
-
 }
 .social-btn:hover {
 	background-color: #fff;
@@ -412,10 +421,15 @@ body {
 .footer-copiright {
 	max-width: 160px;
 	margin-left: auto;
-
 }
 .footer-copiright p {
 	margin: 0;
-	text-align: center;
 	margin-bottom: 15px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+.footer-copiright a:hover {
+	background-color: #fff;
+	color: #000;
 }
