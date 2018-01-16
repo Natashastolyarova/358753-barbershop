@@ -273,62 +273,6 @@ body {
 	width: 100%;
 }
 
-
-/*.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-X {
-    width: 12px;
-    height: 12px;
-    background-position: -10px -10px;
-}
-
-.sprite-f {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -42px;
-}
-
-.sprite-f-copy {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -84px;
-}
-
-.sprite-inst {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -126px;
-}
-
-.sprite-inst-copy {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -167px;
-}
-
-.sprite-login {
-    width: 18px;
-    height: 16px;
-    background-position: -10px -208px;
-}
-
-.sprite-v {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -244px;
-}
-
-.sprite-v-copy {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -280px;
-}*/
-
-
 /*     /////      .footer -->       //////        */
 .main-footer {
 	height: 190px;
@@ -371,51 +315,36 @@ body {
 	line-height: 24px;
 }
 .social-btn {
-	position: relative;
 	display: inline-block;
 	width: 43px;
 	height: 43px;
 	font-size: 0;
 	vertical-align: top;
-	background-color: #000;
+	background: #000 url("../img/sprite/spritesheet.png");
+
 	transition: background-position 0.5s,
 	background-color 0.5s;
 }
 .social-btn:hover {
 	background-color: #fff;
 }
-.social-btn::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-image: url("../img/sprite/spritesheet.png");
-	background-repeat: no-repeat;	
+.social-btn-vk{
+ 	background-position: -2px -231px;
 }
-.social-btn-vk::before {
-	width: 25px;
-  height: 16px;
-	background-position: -10px -244px;
+.social-btn-vk:hover {
+  background-position: -2px -266px;
 }
-.social-btn-vk:hover::before {
-  background-position: -10px -280px;
+.social-btn-fb {
+	background-position: 4px -32px;
 }
-.social-btn-fb::before {
-	 width: 12px;
-  height: 22px;
-	background-position: -10px -42px;
+.social-btn-fb:hover {
+	background-position: 4px -74px;
 }
-.social-btn-fb:hover::before {
-	background-position: -10px -84px;
+.social-btn-inst {
+	background-position: 1px -116px;
 }
-.social-btn-inst::before {
-	width: 21px;
-	height: 21px;
-	background-position: -10px -126px;
-}
-.social-btn-inst:hover::before {
-	background-position: -10px -167px;
+.social-btn-inst:hover {
+	background-position: 1px -157px;
 }
 
 .footer-copiright {
