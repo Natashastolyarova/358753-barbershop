@@ -167,8 +167,8 @@ body {
 .index-content {
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 80px;
 	margin-bottom: 35px;
+	padding: 50px 80px;
 	color: #000;
 	background: url("../img/shadw.png") no-repeat center,
 	#f8f5f2 url(../img/bg-phone.jpg);
@@ -180,7 +180,8 @@ body {
 	width: 300px;
 }
 .index-content-title {
-	margin-bottom: 20px;
+	margin: 0;
+	margin-bottom: 25px;
 	font-size: 30px;
 	line-height: 42px;
 	}
