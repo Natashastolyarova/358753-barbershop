@@ -367,41 +367,47 @@ body {
 	width: 43px;
 	height: 43px;
 	font-size: 0;
-	background: #000 url("../img/sprite/spritesheet.png");
+	background-color: #000;
+	translate: background-position: 0.5s;
+}
+.social-btn:hover {
+	background-color: #fff;
 }
 .social-btn::before {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	display: inline-block;
-	
+	transform: translate(-50%, -50%);
+	background-image: url("../img/sprite/spritesheet.png");
+	background-repeat: no-repeat;	
 
 }
-/*.social-btn::before {
-	background: #000 url("../img/sprite/spritesheet.png");
-}*/
-.social-btn:hover {
-	background-color: #fff;
-}
 .social-btn-vk::before {
+	width: 25px;
+  height: 16px;
 	background-position: -10px -244px;
 }
 .social-btn-vk:hover::before {
   background-position: -10px -280px;
 }
 .social-btn-fb::before {
+	 width: 12px;
+  height: 22px;
 	background-position: -10px -42px;
 }
 .social-btn-fb:hover::before {
 	background-position: -10px -84px;
 }
 .social-btn-inst::before {
+	width: 21px;
+	height: 21px;
 	background-position: -10px -126px;
 }
 .social-btn-inst:hover::before {
 	background-position: -10px -167px;
 }
+
 .footer-copiright {
 	width: 160px;
 	text-align: right;
