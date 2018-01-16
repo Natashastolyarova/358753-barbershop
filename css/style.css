@@ -92,7 +92,7 @@ body {
 	left: 25px;
 	width: 18px;
 	height: 18px;
-	background: url("../img/login.png") no-repeat;
+	background: url("../img/sprite/spritesheet.png") -10px -208px no-repeat;
 	opacity: 0.3;
 }
 .login:hover::before {
@@ -269,28 +269,127 @@ body {
 .appointment-form input:hover {
 	border-color: #663d15;
 }
+.appointment-form .btn {
+	width: 100%;
+}
+
+
+/*.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-X {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-f {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -42px;
+}
+
+.sprite-f-copy {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -84px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -126px;
+}
+
+.sprite-inst-copy {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -167px;
+}
+
+.sprite-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -208px;
+}
+
+.sprite-v {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -244px;
+}
+
+.sprite-v-copy {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -280px;
+}*/
+
 
 /*     /////      .footer -->       //////        */
 .main-footer {
-	background: #fff url(../img/footer-bg.png) 0 0 no-repeat;
 	height: 190px;
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+	background: #222222 url(../img/footer-bg.png) 0 0 no-repeat;
 }
 .main-footer-layout {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 }
 .footer-contacts {
 	width: 320px;
 	margin-right: 60px;
 }
+.footer-contacts a {
+	color: #fff;
+}
+.footer-contacts a:hover {
+	text-decoration: none;
+	color: #6f6d6d;
+}
+
 .footer-social {
 	width: 260px;
+}
+.footer-social a {
+	font-size: 0;
+}
+.footer-social a::before {
+	content: "";
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+		transform: background-position 0.5s,
+		color 0.5s;
+
+}
+.social-btn::before {
+	background: #000 url("../img/sprite/spritesheet.png");
+}
+.social-btn:hover::before {
+	background-color: #fff;
+}
+.social-btn-vk::before {
+	background-position: -10px -244px;
+}
+.social-btn-vk:hover::before {
+  background-position: -10px -280px;
+}
+.social-btn-fb::before {
+	background-position: -10px -42px;
+}
+.social-btn-fb:hover::before {
+	background-position: -10px -84px;
+}
+.social-btn-inst::before {
+	background-position: -10px -126px;
+}
+.social-btn-inst:hover::before {
+	background-position: -10px -167px;
 }
 .footer-copiright {
 	width: 160px;
