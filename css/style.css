@@ -368,7 +368,8 @@ body {
 	height: 43px;
 	font-size: 0;
 	background-color: #000;
-	translate: background-position: 0.5s;
+	transition: background-position 0.5s,
+	background-color: 0.5s;
 }
 .social-btn:hover {
 	background-color: #fff;
