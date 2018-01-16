@@ -188,6 +188,25 @@ body {
 	}
 .index-content p {
 	margin: 0;
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.news-previw {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.news-previw p {
+	margin-bottom: 0;
+}
+.news-previw time{
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: lowercase;
+}
+.news-previw li {
+	margin-bottom: 30px;
 }
 /*     /////      .footer -->       //////        */
 .main-footer {
