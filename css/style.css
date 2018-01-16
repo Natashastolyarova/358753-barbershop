@@ -140,25 +140,28 @@ body {
 }
 .features-name {
 	position: relative;
+	display: block;
+	padding-bottom: 30px;
+	margin-bottom: 35px;
 	font-size: 30px;
 	line-height: 42px;
 }
-/*.features-name::after {
+.features-name::after {
 	position: absolute;
-	top: 30%;
-	left: 140px;
+	bottom: 0;
+	left: 50%;
 	transform: rotate(-45deg);
 	content: "";
 	width: 20px;
 	height: 20px;
 	display: block;
 	background-color: #fff;
-}*/
+}
 .features-item p {
 	line-height: 24px;
 	font-size: 14px;
-	padding: 67px 5px 10px ;
-}
+/*	padding: 67px 5px 10px ;
+*/}
 /*//////////          <--features   and    /////////*/
 
 .index-content {
