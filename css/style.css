@@ -362,3 +362,84 @@ body {
 	background-color: #fff;
 	color: #000;
 }
+
+/*     /////     PRICE-LIST     /////     */
+.main-navigation .logo-img {
+	max-height: 70px;
+}
+
+.main-price {
+	background-color: #f8f5f2;
+	color: #000;
+	padding-top: 125px;
+	padding-bottom: 80px;
+}
+.main-price h1 {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+
+.main-price-menu {
+	display: flex;
+	padding: 0;
+	margin-bottom: 75px;
+	list-style: none; 
+}
+.main-price-menu li {
+	position: relative;
+	margin: 0;
+}
+.main-price-menu a {
+	display: block;
+	padding: 0 15px;
+	font-size: 14px;
+	line-height: 24px;
+	color: inherit;
+	text-decoration: none;
+}
+.main-price-menu li:nth-child(n+2) a::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -3px;
+	transform:  translateY(-50%) rotate(45deg);
+	width: 7px;
+	height: 7px;
+	background-color: #000;
+}
+
+.price-line {
+	position: relative;
+	margin-bottom: 85px;
+	border: 1px solid #000;
+}
+.main-price-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+
+	display: inline-block;
+	margin: 0 17%;
+	padding: 0 25px;
+	background: #f8f5f2 url() 0 0 no-repeat;
+	text-align: center;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
