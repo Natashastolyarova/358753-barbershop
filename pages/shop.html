@@ -2,130 +2,290 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп "Бородинський"</title>
+    <title>Барбершоп "Бородинський" прайс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-  	<header class="main-header">
-  		<div class="container">
-  			<nav class="main-navigation">
-					<ul>
-						<li><a href="../index.html">Информация</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="price-list.html">Прайс-лист</a></li>
-						<li><a href="shop.html">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-  			</nav>
-  			<div class="user-block">
-  				<a href="#" class="login">Вход</a>
-  			</div>
-  		</div>
-  	</header>
 
-  	<!-- <main class="container">
-  		<div class="index-logo">
-  			<img src="#" alt="Барбершоп Бородинський">
-  		</div>
-  		<section class="features">
-  			<div class="features-item">
-  				<b class="features-name">Быстро</b>
-  				<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА 
-  					 ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ 
-  					 ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
-  			</div>
-  			<div class="features-item">
-  				<b class="features-name">Круто</b>
-  				<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
-						 МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
-						 ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
-  			</div>
-  			<div class="features-item">
-  				<b class="features-name">Дорого</b>
-  				<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И 
-  					 НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА 
-  					 НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
-  			</div>
-  		</section>
-  		<div class="index-content">
-  			<div class="index-content-left">
-  				<h2 class="index-content-title">Новости</h2>
-  				<ul class="news-previw">
-  					<li>
-  						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ 
-  							 ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-  							 <time datetime="2018-01-04">04 января</time>
-  					</li>
-  					<li>
-  						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, 
-  							 ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ 
-  							 СТРОЙНЫЕ РЯДЫ</p>
-  							 <time datetime="2017-12-20">20 декабря</time>
-  					</li>
-  				</ul>
-  				<a class="btn" href="#">Все новости</a>
-  			</div>
-  			<div class="index-content-right">
-  				<h2 class="index-content-title">Фотогалерея</h2>
-  				<div class="gallery">
-  					<figure class="gallery-content">
-  						<img src="#" alt="Galery">
-  					</figure>
-  					<button class="btn gallery-prew" type="button">Назад</button>
-  					<button class="btn gallery-next" type="button">Вперед</button>
-  				</div>
-  			</div>
-  		</div>
+    <header class="main-header">
+      <div class="container main-header-layout">
+        <nav class="main-navigation ">
+          <ul>
+            <li><a class="logo-img" href="../index.html"><img src="../img/logo-menu.png" alt="Barbershop"></a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="price-list.html">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="login">Вход</a>
+        </div>
+      </div>
+    </header>
 
-  		<div class="index-content">
-  			<div class="index-content-left">
-  				<h2 class="index-content-title">Контактная информация</h2>
-  				<p>
-  				 	 БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-  					 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-  					 ТЕЛЕФОН: +7 (495) 666-02-66
-  				</p>
-  				<p>
-  					 ВРЕМЯ РАБОТЫ:<br>
-  					 ПН — ПТ: С 10:00 ДО 22:00<br>
-  					 СБ — ВС: С 10:00 ДО 19:00
-  				</p>
-  				<a class="btn" href="#">Как проехать</a>
-  				<a class="btn" href="#">Обратная связь</a>
-  			</div>
-  			<div class="index-content-right">
-  				<h2 class="index-content-title">Записатся</h2>
-  				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ 
-  					 С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-  				<form class="appointment-form" action="#" method="post">
-  					<input type="text" name="date" value="" placeholder="Дата">
-  					<input type="text" name="time" value="" placeholder="Время">
-  					<input type="text" name="name" value="" placeholder="Ваше имя">
-  					<input type="tel" name="phone" value="" placeholder="Телефон">
-  					<button class="btn" type="submit">Отправить</button>
-  				</form>
-  			</div>
-  		</div>
-  	</main> -->
-  	
-  	<footer class="main-footer">
-  		<div class="container">
-  			<section class="footer-contacts">
-  				БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-					КАК НАС НАЙТИ?<br>
-					ТЕЛЕФОН: +7 (495) 666-02-66
-  			</section>
-  			<section class="footer-social">
-  				<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-  				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-  				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-  				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-  			</section>
-  			<section class="footer-copiright">
-  				<p>Разработано</p>
-  				<a class="btn" href="#">JS Academy</a>
-  			</section>
-  		</div>
-  	</footer>
+   <!--  <main class="main-container container">
+      <div class="index-logo">
+        <img src="img/logo.png" alt="Барбершоп Бородинський">
+      </div>
+
+      <section class="features">
+        <div class="features-item">
+          <b class="features-name">Быстро</b>
+          <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА 
+             ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ 
+             ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">Круто</b>
+          <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>
+             МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+             ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">Дорого</b>
+          <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И 
+             НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА 
+             НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+        </div>
+      </section>
+
+      <div class="index-content">
+        <div class="index-content-left">
+          <h2 class="index-content-title">Новости</h2>
+          <ul class="news-previw">
+            <li>
+              <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ 
+                 ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                 <time datetime="2018-01-04">04 января</time>
+            </li>
+            <li>
+              <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, 
+                 ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ 
+                 СТРОЙНЫЕ РЯДЫ</p>
+                 <time datetime="2017-12-20">20 декабря</time>
+            </li>
+          </ul>
+          <a class="btn" href="#">Все новости</a>
+        </div>
+        <div class="index-content-right">
+          <h2 class="index-content-title">Фотогалерея</h2>
+          <div class="gallery">
+            <figure class="gallery-content">
+              <img src="img/Layer.jpg" alt="Galery">
+            </figure>
+             <button class="btn gallery-prew" type="button">Назад</button>
+             <button class="btn gallery-next" type="button">Вперед</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-content">
+        <div class="index-content-left">
+          <h2 class="index-content-title">Контактная информация</h2>
+          <p>
+             БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+             ТЕЛЕФОН: +7 (495) 666-02-66
+          </p>
+          <p>
+             ВРЕМЯ РАБОТЫ:<br>
+             ПН — ПТ: С 10:00 ДО 22:00<br>
+             СБ — ВС: С 10:00 ДО 19:00
+          </p>
+          <div class="wrap-flex-btn">
+          <a class="btn" href="#">Как проехать</a>
+          <a class="btn" href="#">Обратная связь</a>
+          </div>
+        </div>
+        
+        <div class="index-content-right">
+          <h2 class="index-content-title">Записатся</h2>
+          <p class="text-format">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ 
+             С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+          <form class="appointment-form" action="#" method="post">
+            <input type="text" name="date" value="" placeholder="Дата">
+            <input type="text" name="time" value="" placeholder="Время">
+            <input type="text" name="name" value="" placeholder="Ваше имя">
+            <input type="tel" name="phone" value="" placeholder="Телефон">
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main> -->
+
+    <main class="main-price">
+      <div class="container">
+        <h1>Магазин</h1>
+        <ul class="main-price-menu main-menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+        </ul>
+
+        <div class="inner-content">
+          <aside class="shop-filters">
+            <form action="#" method="GET">
+              <fieldset>
+                <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                <input type="checkbox" name="manufactures" id="baxter" value="Baxter of California">
+                <div class="square-chackbox"></div>
+                <label for="baxter">Baxter of Californinia</label>
+                <input type="checkbox" name="manufactures" id="nataly" value="Mr Natty">
+                <div class="square-chackbox"></div>
+                <label for="nataly">Mr Natty</label>
+                <input type="checkbox" name="manufactures" id="suav" value="Suavecito">
+                <div class="square-chackbox"></div>
+                <label for="suav">Suavecito</label>
+                <input type="checkbox" name="manufactures" id="m-g" value="Malin+Goetz">
+                <div class="square-chackbox"></div>
+                <label for="m-g">Malin+Goetz</label>
+                <input type="checkbox" name="manufactures" id="murr" value="Murray’s">
+                <div class="square-chackbox"></div>
+                <label for="murr">Murray’s</label>
+                <input type="checkbox" name="manufactures" id="amcr" value="American Crew">
+                <div class="square-chackbox"></div>
+                <label for="amcr">American Crew</label>
+              </fieldset>
+              <fieldset>
+                <legend>ГРУППЫ ТОВАРОВ:</legend>
+                <input type="radio" name="group" id="razer" value="Бритвенные принадлежности" checked>
+                <label for="razer">Бритвенные принадлежности</label>
+                <input type="radio" name="group" id="care" value="Средства для ухода">
+                <label for="care">Средства для ухода</label>
+                <input type="radio" name="group" id="accessories" value="Аксессуары">
+                <label for="accessories">Аксессуары</label>
+              </fieldset>
+              <input type="submit" class="btn btnshow" value="Показать">
+            </form>
+          </aside>
+
+          <section class="shop-items">
+            <article class="shop-item">
+              <a href="#"><img src="../img/article/Layer 38.jpg" alt="«Baxter of California»"></a>
+              <a href="#"><h2>Набор для путешествий<br> 
+              «Baxter of California»</h2></a>
+              <div class="shop-item-worth">2 800 руб.</div>
+              <a href="#" class="btn btn-buy">Купить</a>
+            </article>
+            <article class="shop-item">
+              <a href="#"><img src="../img/article/Layer 38.jpg" alt="«Baxter of California»"></a>
+              <a href="#"><h2>Набор для путешествий<br> 
+              «Baxter of California»</h2></a>
+              <div class="shop-item-worth">2 800 руб.</div>
+              <a href="#" class="btn btn-buy">Купить</a>
+            </article>
+            <article class="shop-item">
+              <a href="#"><img src="../img/article/Layer 38.jpg" alt="«Baxter of California»"></a>
+              <a href="#"><h2>Набор для путешествий<br> 
+              «Baxter of California»</h2></a>
+              <div class="shop-item-worth">2 800 руб.</div>
+              <a href="#" class="btn btn-buy">Купить</a>
+            </article>
+            <article class="shop-item">
+              <a href="#"><img src="../img/article/Layer 38.jpg" alt="«Baxter of California»"></a>
+              <a href="#"><h2>Набор для путешествий<br> 
+              «Baxter of California»</h2></a>
+              <div class="shop-item-worth">2 800 руб.</div>
+              <a href="#" class="btn btn-buy">Купить</a>
+            </article>
+             <article class="shop-item">
+              <a href="#"><img src="../img/article/Layer 38.jpg" alt="«Baxter of California»"></a>
+              <a href="#"><h2>Набор для путешествий<br> 
+              «Baxter of California»</h2></a>
+              <div class="shop-item-worth">2 800 руб.</div>
+              <a href="#" class="btn btn-buy">Купить</a>
+            </article>
+            
+            <nav class="shop-pages">
+              <ul>
+                <li><a href="#" class="btn btn-page">1</a></li>
+                <li><a href="#" class="btn btn-page">2</a></li>
+                <li><a href="#" class="btn btn-page">3</a></li>
+                <li><a href="#" class="btn btn-page">$</a></li>
+                <li><a href="#" class="btn btn-page">5</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+      <!-- <div class="price-line">
+        <h2 class="main-price-title">Истинно Мужская Классика</h2>
+      </div>
+
+        <div class="section-price section-price-top">
+          <div class="price-box">
+            <h3>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
+            <ul class="features-price">
+              <li>Baxter of California</li>
+              <li>Mr Natty</li>
+              <li>Suavecito</li>
+              <li>Malin+Goetz</li>
+            </ul>
+          </div>
+
+          <div class="price-box">
+          <h3>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
+          <table class="price">
+            <tr>
+              <td>СТРИЖКА</td><td>1500 Р.</td>
+            </tr>
+            <tr>
+              <td>СТРИЖКА БОРОДЫ</td><td>500 Р.</td>
+            </tr>
+            <tr>
+              <td>НАКРУТКА УСОВ</td><td>350 Р.</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+
+        <div class="section-price">
+          <div class="features-price">
+            <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
+            <div class="section-price section-price-top">
+              <p>Наша парикмахерская занимается исключительно мужскими стрижками. 
+              Стрижка каждого клиента для нас - это уникальная 
+              и продуманная до мелочей работа. Мы не работаем 
+              на количество, мы делаем качество.</p>
+              <p>Наша мастерская расположена в центре города, поэтому 
+              сделать стильную стрижку можно в любое время, даже в 
+              обеденный перерыв. Здесь вы можете погрузиться в удобную 
+              для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+            </div>
+          </div>
+        </div> -->
+
+      </div> 
+    </main>
+
+    <footer class="main-footer">
+      <div class="container main-footer-layout">
+        
+        <section class="footer-contacts">
+          <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+          <a href="#">КАК НАС НАЙТИ?</a><br>
+          <p class="footer-contacts-tel">ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </section>
+
+        <section class="footer-social">
+          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+
+        <section class="footer-copiright">
+          <p>Разработано</p>
+          <a class="btn" href="#">JS Academy</a>
+        </section>
+
+      </div>
+    </footer>
+
   </body>
 </html>
