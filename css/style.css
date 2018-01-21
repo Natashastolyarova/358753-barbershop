@@ -29,8 +29,14 @@ body {
 	background: #000 url(../img/body-bg.jpg) no-repeat center top;
 	background-size: cover;
 }
+.vis-hidden {
+	display: none;
+}
 
 /*//////////// 		 Header nav -->			   /////////////*/
+
+
+
 .main-header {
 	position: fixed;
 	top: 0;
