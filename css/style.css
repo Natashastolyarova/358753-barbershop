@@ -596,7 +596,7 @@ input[type=radio]:checked+label::after {
 .shop-item {
 	width: 220px;
 	background-color: #fff;
-	/*margin-bottom: 20px;*/
+	margin-bottom: 20px;
 	box-shadow: 0 0 15px rgba(0,1,1,.2)
 }
 .shop-item a {
