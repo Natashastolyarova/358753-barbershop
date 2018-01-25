@@ -10,20 +10,20 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <nav class="main-navigation ">
-        <a class="main-header-logo" href="../index.html">
-          <img src="../img/logo.svg" width="111" height="24" alt="Логотип Барбершопа">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="pages/info.html">Информация</a></li>
-          <li><a href="pages/news.html">Новости</a></li>
-          <li><a href="pages/price.html">Прайс-лист</a></li>
-          <li class="site-navigation-current"><a>Магазин</a></li>
-          <li><a href="pages/contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="#" class="login-link">Вход</a></li>
-        </ul>
+      <nav class="main-navigation container">
+          <a class="main-header-logo" href="../index.html">
+            <img src="../img/logo.svg" width="111" height="24" alt="Логотип Барбершопа">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="pages/info.html">Информация</a></li>
+            <li><a href="pages/news.html">Новости</a></li>
+            <li><a href="pages/price.html">Прайс-лист</a></li>
+            <li class="site-navigation-current"><a>Магазин</a></li>
+            <li><a href="pages/contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a href="#" class="login-link">Вход</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -34,106 +34,165 @@
         <li><a href="../pages/catalog.html">Магазин</a></li>
         <li class="braadcrumbs-current">Средства для уходв</li>
       </ul>
-
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-         <form class="filter" action="#" method="GET">
-            <fieldset>
-              <legend>Производители:</legend>
-              <ul>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-baxter-of-californinia" type="checkbox" name="baxter-of-californinia">
-                  <label for="filter-baxter-of-californinia">Baxter of Californinia</label>
-                </li>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty" type="checkbox" name="mr-natty">
-                  <label for="filter-mr-natty">Mr Natty</label>
-                </li>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-suavecito" type="checkbox" name="suavecito">
-                  <label for="filter-suavecito">Suavecito</label>
-                </li>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-malingoetz" type="checkbox" name="malingoetz">
-                  <label for="filter-malingoetz">Malin+Goetz</label>
-                </li>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-murrays" type="checkbox" name="murrays" disabled>
-                  <label for="filter-murrays">Murray’s</label>
-                </li>
-                <li class="filter-options">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-american-crew" type="checkbox" name="american-crew">
-                  <label for="filter-american-crew">American Crew</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Группы товаров:</legend>
-              <ul>
-                <li class="filter-option">
-                    <input class="visually-hidden" id="filter-shave" type="radio" name="product-group" value="shaving" checked>
-                    <label for="filter-shave">Бритвенные принадлежности</label>
-                </li>
-                <li class="filter-option">
-                    <input class="visually-hidden" id="filter-care" type="radio" name="product-group" value="hair-care">
-                    <label for="filter-care">Средства для ухода</label>
-                </li>
-                <li class="filter-option">
-                    <input class="visually-hidden" id="filter-accessories" type="radio" name="product-group" value="accesories">
-                    <label for="filter-accessories" >Аксессуары</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button type="submit" class="btn btn-filter">Показать</button>
-          </form>
-      </section>
-
-      <section class="catalog">
-        <h2 class="visually-hidden">Список средств для ухода</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Набор для путешествий</span>
-                <span class="catalog-item-title">«Baxter of California»</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img/article/Layer 38.jpg" width="220" height="165" alt="Набор для путишествий «Baxter of California»">
-              </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>2 900 Р</b>
-              <a href="#" class="btn">Купить</a>
-            </p>
-          </li>
-
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Набор для путешествий</span>
-                <span class="catalog-item-title">«Baxter of California»</span>
-              </h3>
-              <p class="catalog-price-image">
-                <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
-              </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>2 900 Р</b>
-              <a href="#" class="btn">Купить</a>
-            </p>
-          </li>
-
- 
-        </ul>
       
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
-        </ul>
-      </section>
+      <div class="catalog-columns">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+           <form class="filter" action="#" method="GET">
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-baxter-of-californinia" type="checkbox" name="baxter-of-californinia">
+                    <label for="filter-baxter-of-californinia">Baxter of Californinia</label>
+                  </li>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty" type="checkbox" name="mr-natty">
+                    <label for="filter-mr-natty">Mr Natty</label>
+                  </li>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-suavecito" type="checkbox" name="suavecito">
+                    <label for="filter-suavecito">Suavecito</label>
+                  </li>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-malingoetz" type="checkbox" name="malingoetz">
+                    <label for="filter-malingoetz">Malin+Goetz</label>
+                  </li>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-murrays" type="checkbox" name="murrays" disabled>
+                    <label for="filter-murrays">Murray’s</label>
+                  </li>
+                  <li class="filter-options">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-american-crew" type="checkbox" name="american-crew">
+                    <label for="filter-american-crew">American Crew</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Группы товаров:</legend>
+                <ul>
+                  <li class="filter-option">
+                      <input class="visually-hidden" id="filter-shave" type="radio" name="product-group" value="shaving" checked>
+                      <label for="filter-shave">Бритвенные принадлежности</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="visually-hidden" id="filter-care" type="radio" name="product-group" value="hair-care">
+                      <label for="filter-care">Средства для ухода</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="visually-hidden" id="filter-accessories" type="radio" name="product-group" value="accesories">
+                      <label for="filter-accessories" >Аксессуары</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="btn btn-filter">Показать</button>
+            </form>
+        </section>
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Список средств для ухода</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/article/Layer 38.jpg" width="220" height="165" alt="Набор для путишествий «Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-price-image">
+                  <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-price-image">
+                  <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-price-image">
+                  <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-price-image">
+                  <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Набор для путешествий</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+                </h3>
+                <p class="catalog-price-image">
+                  <img src="../img/article/Layer 38.jpg" width="220" height="165" alt="«Baxter of California»">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>2 900 Р</b>
+                <a href="#" class="btn">Купить</a>
+              </p>
+            </li>
+          </ul>
+        
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item"><a href="#">5</a></li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
