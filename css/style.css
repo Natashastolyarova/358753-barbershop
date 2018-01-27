@@ -327,13 +327,72 @@ input[type="radio"].visually-hidden {
 
 
 
-
+/*     /////      Checkbox X only css-->     /////     */
 .filter-options label {
-	display: block;
 	position: relative;
 	cursor: pointer;
 }
-.filter-options input[type="checkbox"] + label::before {
+.filter-options input[type="checkbox"] + .checked-box {
+	content: "";
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	display: block;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000;
+}
+.filter-options input[type="checkbox"]:focus + .checked-box {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+.filter-options input[type="checkbox"]:checked + .checked-box::before, 
+.filter-options input[type="checkbox"]:checked + .checked-box::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 15px;
+	height: 2px;
+	background-color: #000;
+} 
+.filter-options input[type="checkbox"]:checked + .checked-box::before {
+	transform: rotate(45deg);
+}
+.filter-options input[type="checkbox"]:checked + .checked-box::after {
+	transform: rotate(-45deg);
+}
+
+/*     ??????????????     */
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #663d15;
+}
+.filter-input:disabled + div {
+	color: #000;
+	opacity: 0.5;
+}
+/*     /////     <--Checkbox X only css End    /////     */
+.filter-options input[type="radio"] + label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -40px;
+	height: 8px;
+	width: 8px;
+	border: 6px solid #000;
+	border-radius: 50%;
+	border-color: #000;
+} 
+
+.filter-options input[type="radio"]:focus + label::before {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+/*.filter-options input[type="checkbox"] + label::before {
 	content: "";
 	position: absolute;
 	left: -40px;
@@ -348,7 +407,7 @@ input[type="radio"].visually-hidden {
 	border-color: #663d15;
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
-}
+}*/
 
 /*.filter-options label::after {
 	content: "";
@@ -381,14 +440,7 @@ input[type="radio"].visually-hidden {
 }*/
 
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-	color: #663d15;
-}
-.filter-input:disabled + label {
-	color: #000;
-	opacity: 0.5;
-}
+
 
 /*     /////     .Inner-page.Catalog     /////     */
 .catalog {
