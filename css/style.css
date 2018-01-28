@@ -291,10 +291,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*     /////     .Inner-page    /////     */
-.catalog-columns {
-	display: flex;
-	justify-content: space-between;
-}
+
 
 /*     /////     .Inner-page.Filter     /////     */
 .filters {
@@ -670,25 +667,69 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 }
 
-
+/*     /////     .Catalog-item     /////     */
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
 .product-photos {
+	display: flex;
+	flex-wrap: wrap;
 	width: 460px;
 }
-.product-info {
-	width: 390px;
-}
 .product-photo-preview {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
 	list-style: none;
 }
 .product-photo-preview  li {
+	width: 140px;
+	height: 149px;
 	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
 }
 .product-photo-full {
+	padding: 0;
+	margin: 0;
+	width: 460px;
+	height: 500px;
 	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
 }
+.product-photo-preview li:hover {
+	cursor: pointer;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+.product-info {
+	width: 390px;
+}
+.product-info .product-info-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.product-info-wrapper p {
+	margin: 0;
+	padding: 0;
+}
+.product-info .product-text {
+	margin: 0;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
 .product-article {
-text-align: right;
-color: #aeaeae;
+	color: #aeaeae;
+}
+.product-price {
+	width: 188px;
+	padding: 0;
+	margin: 0;
+}
+.product-price .btn {
+	line-height: 24px;
 }
 .product-price b {
 	font-size: 14px;
@@ -697,11 +738,28 @@ color: #aeaeae;
 	background-color: #e5e5e5;
 }
 .product-info h3 {
+	margin-top: 65px;
 	font-size: 24px;
 	line-height: 30px;
 }
 .product-info ul {
+	padding: 0;
+	padding-left: 20px;
+	margin: 0;
 	list-style: none;
+}
+.product-info li{
+	position: relative;
+}
+.product-info li::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -18px;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	transform: rotate(45deg);
 }
 
 /*     /////     .Pagination     /////     */
