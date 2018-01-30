@@ -124,18 +124,20 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 }
+.site-navigation,
+.user-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
 	width: 620px;
 }
 .user-navigation {
 	display: flex;
 	max-width: 140px;
-	margin: 0;
-	padding: 0;
 }
 .user-navigation .login-link {
 	position: relative;
@@ -163,12 +165,7 @@ input[type="radio"].visually-hidden {
 .inner-page .user-navigation {
 	margin-left: auto;
 }
-.site-navigation,
-.user-navigation {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+
 .site-navigation a,
 .user-navigation a {
 	display: block;
