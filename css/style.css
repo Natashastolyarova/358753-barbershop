@@ -1025,10 +1025,11 @@ input[type="radio"].visually-hidden {
 
 /*     /////     .Modal     /////     */
 .modal {
+	display: none;
+
 	position: fixed;
 
 	color: #000;
-
 	background-color: #f8f5f2;
 	background-image: url("../img/modal-bg.jpg");
 	background-position: 0 0;
@@ -1071,7 +1072,7 @@ input[type="radio"].visually-hidden {
 
 /*     /////     .Modal-login     /////     */
 .modal-login {
-	display: none;
+	/*display: none;*/
 	top: 120px;
 	left: 50%;
 
@@ -1080,17 +1081,6 @@ input[type="radio"].visually-hidden {
 	/*height: 385px;*/
 	padding: 50px 80px;
 }
-.modal-show {
-	display: block;
-	animation-name: bonce;
-	animation-duration: 0.6s;
-}
-.modal-error {
-	animation-name: shake;
-	animation-duration: 0.6s;
-}
-
-
 .modal-login h2 {
 	margin: 0;
 	margin-bottom: 20px;
@@ -1136,25 +1126,6 @@ input[type="radio"].visually-hidden {
 	background-position: 270px center;
 	background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .login-checkbox {
 	position: relative;
 
@@ -1212,7 +1183,6 @@ input[type="radio"].visually-hidden {
 
 /*     /////     .Modal-map     /////     */
 .modal-map {
-	display: none;
 	top: 50%;
 	left: 50%;
 
@@ -1225,11 +1195,23 @@ input[type="radio"].visually-hidden {
 }
 .modal-map p {
 	margin: 0;
+	padding: 0;
 }
 .modal-map img {
+	width: 765px;
+	height: 560px;
 	/*box-shadow: 0 30px 50px rgba(0,0,0,0.7);*/
 }
 
+.modal-show {
+	display: block;
+	animation-name: bonce;
+	animation-duration: 0.6s;
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
 
 
 

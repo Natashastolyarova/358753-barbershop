@@ -100,7 +100,7 @@
   				<p>Время работы:<br>
   					 пн — пт: с 10:00 до 22:00<br>
   					 сб — вс: с 10:00 до 19:00</p>
-    			<a class="btn btn-contacts" href="map.html">Как проехать</a>
+    			<a class="btn btn-contacts btn-contacts-map" href="map.html">Как проехать</a>
     			<a class="btn btn-contacts" href="pages/contacts.html">Обратная связь</a>
         </section>
         
@@ -136,7 +136,7 @@
   			<p class="footer-contacts">
           Барбершоп «Бородинский»<br>
 					Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-					<a href="#">Как нас найти?</a><br>
+					<a class="footer-contacts-map" href="#">Как нас найти?</a><br>
 					Телефон: +7 (495) 666-02-66
         </p>
 
@@ -194,13 +194,15 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добратся</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.337797960634!2d30.318362253703597!3d59.93677487333035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2sBolshaya+Konyushennaya+Street%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sua!4v1517664148951" width="765" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>
-        <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <!-- <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
       </p>
-      <button class="modal-close" type="button">Закрить</button>
+      <button class="modal-close modal-close-map" type="button">Закрить</button>
     </section>
 
     <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
 
