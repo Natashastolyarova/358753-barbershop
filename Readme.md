@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Nazzarik](http://google.com).
+* Студент: [Nazzarik](http://facebook.com).
 
 ---
 
