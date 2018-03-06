@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Natalia Stolyarova](https://up.htmlacademy.ru/htmlcss/19/user/358753).
+* Студент: [Nazzarik](http://facebook.com).
 
 ---
 
